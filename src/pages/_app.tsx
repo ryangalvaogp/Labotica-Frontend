@@ -5,7 +5,6 @@ import { ProfileContextProvider } from '../contexts/profileContext'
 import { ProjetosContextProviderr } from '../contexts/projetosContext'
 
 import '../styles/global.css'
-import '../styles/Home.css'
 
 export default function MyApp({ Component, pageProps }: any) {
 
