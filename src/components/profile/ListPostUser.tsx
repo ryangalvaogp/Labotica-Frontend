@@ -139,7 +139,7 @@ export default function ListPostUser(
         <img
           style={{ cursor: 'pointer' }}
           onClick={handleCloseToggle}
-          src={`http://localhost:3333/files/posts/${image}`}
+          src={`https://backendlabotica.herokuapp.com/files/posts/${image}`}
           alt={image} />
       </Backdrop>
     </>

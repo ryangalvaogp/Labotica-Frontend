@@ -41,7 +41,7 @@ export default function ImagesOfProjetosCarrousel(
                                                 <Image
                                                     width={530}
                                                     style={{ minWidth: 300 }}
-                                                    src={`http://localhost:3333/files/projetos/${img.caminho}`}
+                                                    src={`https://backendlabotica.herokuapp.com/files/projetos/${img.caminho}`}
                                                     alt={`Imagens do projeto: ${tituloProjeto}`}
                                                     rounded
                                                 />

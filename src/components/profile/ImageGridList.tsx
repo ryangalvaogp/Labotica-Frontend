@@ -43,7 +43,7 @@ export default function ImageGridList(
                                     <img
                                         style={{ cursor: 'pointer' }}
                                         onClick={() => handleToggle()}
-                                        src={`http://localhost:3333/files/posts/${image.image}`}
+                                        src={`https://backendlabotica.herokuapp.com/files/posts/${image.image}`}
                                         alt={image.titulo} />
                                     <Backdrop
                                         className={classes.backdrop}
@@ -52,7 +52,7 @@ export default function ImageGridList(
                                     >
                                         <img
                                             style={{ cursor: 'pointer', width: 500 }}
-                                            src={`http://localhost:3333/files/posts/${image.image}`}
+                                            src={`https://backendlabotica.herokuapp.com/files/posts/${image.image}`}
                                             alt={image.titulo} />
                                     </Backdrop>
                                 </GridListTile>
@@ -78,7 +78,7 @@ export default function ImageGridList(
                                     <img
                                         onClick={() => handleToggle()}
                                         style={{ cursor: 'pointer' }}
-                                        src={`http://localhost:3333/files/projetos/${image.caminho}`}
+                                        src={`https://backendlabotica.herokuapp.com/files/projetos/${image.caminho}`}
                                         alt={image.projeto.titulo}
                                     />
                                     <Backdrop
@@ -88,7 +88,7 @@ export default function ImageGridList(
                                     >
                                         <img
                                             style={{ cursor: 'pointer', width: 500 }}
-                                            src={`http://localhost:3333/files/projetos/${image.caminho}`}
+                                            src={`https://backendlabotica.herokuapp.com/files/projetos/${image.caminho}`}
                                             alt={image.projeto.titulo} />
                                     </Backdrop>
                                 </GridListTile>

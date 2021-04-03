@@ -53,7 +53,7 @@ export function ListPosts() {
                                 alt="Send" />
                             <Share idPost={post.post_Id} open={open} onClose={handleClose} />
                         </header>
-                        <img src={`http://localhost:3333/files/posts/${post.image}`} alt={post.titulo} />
+                        <img src={`https://backendlabotica.herokuapp.com/files/posts/${post.image}`} alt={post.titulo} />
                         <footer>
                             <div className={Styles.actions}>
                                 {/* Aqui [e o espaço para implementar as ações curtir, comentar e etc... */}

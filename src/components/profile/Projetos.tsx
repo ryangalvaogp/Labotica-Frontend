@@ -70,7 +70,7 @@ export default function Projects() {
                                                         image.projeto.titulo,
                                                         image.imgDefault
                                                     )}
-                                                    src={`http://localhost:3333/files/projetos/${image.caminho}`}
+                                                    src={`https://backendlabotica.herokuapp.com/files/projetos/${image.caminho}`}
                                                     alt={image.projeto.titulo} />
                                                 <GridListTileBar
                                                     title={image.projeto.titulo}

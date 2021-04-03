@@ -40,7 +40,7 @@ export default function ListProjetos() {
                     </Link>
                     <img
                       className="img-fluid d-block mx-auto rounded"
-                      src={`http://localhost:3333/files/projetos/${projeto.caminho}`}
+                      src={`https://backendlabotica.herokuapp.com/files/projetos/${projeto.caminho}`}
                       width="750" />
                   </div>
                 </div>
