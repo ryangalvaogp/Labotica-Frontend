@@ -68,7 +68,7 @@ export default function PostsAluno() {
                 titulo={post.titulo}
                 data={post.data}
                 description={post.description}
-                usuario={post.usuario}
+                Usuario={post.usuario}
                 image={post.image}
                 place={post.place}
                 post_Id={post.post_Id}

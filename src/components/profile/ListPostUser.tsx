@@ -17,7 +17,7 @@ export default function ListPostUser(
     image,
     post_Id,
     authorization,
-    usuario
+    Usuario
   }: Posts) {
   const {
     DeletePost,
@@ -60,13 +60,13 @@ export default function ListPostUser(
         <CardHeader
           avatar={
             <Avatar aria-label="recipe" className={
-              usuario.funcao === 'Professor' ?
+              Usuario.funcao === 'Professor' ?
                 classes.avatarProfessor
                 :
                 classes.avatarAluno}
-            >{usuario.name.substring(0, 1)}</Avatar>
+            >{Usuario.name.substring(0, 1)}</Avatar>
           }
-          title={usuario.name}
+          title={Usuario.name}
           subheader={`${place} | ${data}`}
         />
         <CardActionArea  >
