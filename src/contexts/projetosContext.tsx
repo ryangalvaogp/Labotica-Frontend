@@ -1,11 +1,9 @@
 import api from '../config/api';
 import Crypto from 'crypto'
 import { createContext, useContext, useEffect, useState } from 'react'
-import { ProjetosContextData, ProjetosContextProvider } from '../config/Types/TypesProjetos'
+import { ImgProjetoPropsWithoutProjetoProps, ProjetosContextData, ProjetosContextProvider } from '../config/Types/TypesProjetos'
 import { ImgProjetoProps, ListProjetosProps, Projeto } from '../config/Types/TypesProjetos'
 import { ProfileContext } from './profileContext';
-import { ImgProjetoPropsWithoutProjetoProps } from '../config/Types/Types';
-
 
 export const ProjetosContext = createContext({} as ProjetosContextData)
 export function ProjetosContextProviderr({ children }: ProjetosContextProvider) {
