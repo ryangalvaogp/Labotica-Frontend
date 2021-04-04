@@ -107,7 +107,7 @@ function AdmPosts(
                             <ListPostUser
                                 titulo={post.titulo}
                                 data={post.data}
-                                usuario={post.usuario}
+                                Usuario={post.usuario}
                                 description={post.description}
                                 image={post.image}
                                 place={post.place}
@@ -177,7 +177,7 @@ function PostsAllSystem(
                                             image={post.image}
                                             key={post.post_Id}
                                             post_Id={post.post_Id}
-                                            usuario={post.usuario} />
+                                            Usuario={post.usuario} />
                                     </div>
                                 </Grid>
                             ))}
@@ -214,7 +214,7 @@ function PostsAllSystem(
                                             image={post.image}
                                             key={post.post_Id}
                                             post_Id={post.post_Id}
-                                            usuario={post.usuario} />
+                                            Usuario={post.usuario} />
                                     </div>
                                 </Grid>
                             ))}

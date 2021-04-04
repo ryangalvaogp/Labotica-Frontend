@@ -76,7 +76,7 @@ export default function ListPostUser(
             onClick={handleToggle}
             alt={`Imagem do Post ${titulo}`}
             height="140"
-            image={`http://localhost:3333/files/posts/${image}`}
+            image={`https://backendlabotica.herokuapp.com/files/posts/${image}`}
             title={titulo}
           />
           <CardContent>

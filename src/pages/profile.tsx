@@ -8,7 +8,6 @@ export default function Profile() {
     const { isLogged, funcao } = useContext(ProfileContext)
     return (
         <>
-            <Navbar />
             {isLogged ?
                 <Dashboard entity={funcao} />
                 :

@@ -11,8 +11,8 @@ export function ProfileContextProvider({ children }: ProfileProvider) {
     const { currentSubPageProfile } = useContext(PageCurrentContext)
 
     //Login data
-    const [email, setEmail] = useState('Ryan.a@gmail.com')
-    const [password, setPassword] = useState('13696312')
+    const [email, setEmail] = useState('usuario@gmail.com')
+    const [password, setPassword] = useState('12345678')
     const [isLogged, setIsLogged] = useState(false)
 
     //Data acquired after logging in
