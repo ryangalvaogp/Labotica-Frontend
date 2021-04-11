@@ -11,11 +11,10 @@ import api from "../../config/api";
 import Container from '@material-ui/core/Container';
 import { Add } from "@material-ui/icons";
 import { useStyles, useStylesAdd } from './config/moduleStyles'
-import Styles from '../../styles/Feed.module.css'
 import clsx from "clsx";
 
 export default function PostsAluno() {
-  const { usuario_Id } = useContext(ProfileContext);
+  const { usuario_Id, funcao} = useContext(ProfileContext);
   const { posts, refresh } = useContext(FeedContext);
 
   const [postUser, setPostUser] = useState([]);
@@ -45,12 +44,18 @@ export default function PostsAluno() {
           {/* Recent Deposits */}
           <Grid item xs={8} md={4} lg={3}>
             <Paper className={fixedHeightPaper}>
-              <Deposits Titulo={'Total de Posts'} content={postUser.length} />
+              <Deposits 
+                Titulo={'Total de Posts'} 
+                content={postUser.length} 
+                />
             </Paper>
           </Grid>
           <Grid item xs={8} md={4} lg={3}>
             <Paper className={fixedHeightPaper}>
-              <Deposits Titulo={'Total de Posts do Sistema'} content={posts.length} />
+              <Deposits 
+                Titulo={'Total de Posts do Sistema'} 
+                content={posts.length} 
+                nameEntity={funcao}/>
             </Paper>
           </Grid>
           {/* Recent Orders */}
@@ -58,7 +63,7 @@ export default function PostsAluno() {
         <Grid container spacing={3}>
           {postUser.map(post => (
             <Grid
-              className={Styles.PostsAlunoGrid}
+              
               key={post.post_Id}
               item
               xs={12}

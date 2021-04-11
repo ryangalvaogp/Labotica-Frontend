@@ -15,8 +15,8 @@ function SubPageSelect(
     subpage
   }: SubPageProfileSelect): JSX.Element {
   switch (subpage) {
-    case 'home':
-      return <HomeProfile />;
+     case 'home':
+       return <HomeProfile />;
 
     case 'posts':
       return <PostsAluno />;

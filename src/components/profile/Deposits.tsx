@@ -43,7 +43,7 @@ export default function Deposits(
     setFuncaoNewUser(nameEntity)
     setOpen(true);
   };
-
+console.log(nameEntity)
   return (
     <Fragment>
       <div >
@@ -53,7 +53,8 @@ export default function Deposits(
         </Typography>
       </div>
       <div>
-        <ButtonOn />
+        {nameEntity!=='Professor'&&<ButtonOn />}
+        
       </div>
     </Fragment>
   );

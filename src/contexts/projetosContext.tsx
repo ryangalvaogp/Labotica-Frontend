@@ -13,7 +13,7 @@ export function ProjetosContextProviderr({ children }: ProjetosContextProvider) 
   const [projetos, setProjetos] = useState<ListProjetosProps[]>([])//Listar Projetos e Imagem padrão
   const [imagesProjetos, setImagesProjetos] = useState<ImgProjetoProps[]>([])//Todas imagens de todos os projetos
   const [projeto, setProjeto] = useState<Projeto[]>([])//Listar Projeto Específico
-  const [projetctSelectedToViewImages, setProjetctSelectedToViewImages] = useState<Projeto['projeto_id']>('')//Selecionar um Projeto Específico para ver suas imagens
+  const [projetctSelectedToViewImages, setProjetctSelectedToViewImages] = useState<Projeto['projeto_id']>('s')//Selecionar um Projeto Específico para ver suas imagens
   const [imgProjeto, setImgProjeto] = useState<ImgProjetoPropsWithoutProjetoProps[]>([])//Imagens de um projeto Específico
   const [imagesProjetosToCarrousel, setImagesProjetosToCarrousel] = useState([])
 
@@ -85,36 +85,35 @@ export function ProjetosContextProviderr({ children }: ProjetosContextProvider) 
     api.get('projetos')
       .then(res => {
         setAllProjects(res.data);
-      })
+      }).catch(res=>console.log(''))
   }, [refreshData]);
 
   useEffect(() => {
     api.get('projetos/images')
       .then(res => {
         setImagesProjetos(res.data);
-      })
+      }).catch(res=>console.log('projetos'))
   }, [refreshData]);
 
   useEffect(() => {
     api.get(`views/projeto/imagedefault`)
       .then(res => {
         setProjetos(res.data);
-      })
+      }).catch(res=>console.log('views/projeto/imagedefault'))
   }, []);
 
   useEffect(() => {
     api.post(`projetos/${projetctSelectedToViewImages}`)
       .then(res => {
         setProjeto(res.data);
-        console.log(res.data)
-      })
+      }).catch(res=>console.log('projetos/${projetctSelectedToViewImages}'))
   }, [projetctSelectedToViewImages]);
 
   useEffect(() => {
     api.get('views/projeto/carrousel')
       .then(res => {
         setImagesProjetosToCarrousel(res.data);
-      })
+      }).catch(res=>console.log('views/projeto/carrousel'))
   }, []);
 
   return (

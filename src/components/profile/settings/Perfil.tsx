@@ -37,6 +37,7 @@ export default function Perfil() {
     setSeverity(color);
     setOpen(true);
   }
+  
 
   async function HandleOnSubmit(e: Event) {
     e.preventDefault();

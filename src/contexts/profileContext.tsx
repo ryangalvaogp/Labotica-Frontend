@@ -75,7 +75,7 @@ export function ProfileContextProvider({ children }: ProfileProvider) {
         api.get('views/user/allalunos')
             .then(res => {
                 setAllAlunos(res.data);
-            });
+            }).catch(res=>console.log(''));
     }, [
         currentSubPageProfile,
         usuarioIdToDelete,
@@ -86,7 +86,7 @@ export function ProfileContextProvider({ children }: ProfileProvider) {
         api.get('views/user/allprofessores')
             .then(res => {
                 setAllProfessores(res.data);
-            });
+            }).catch(res=>console.log(''));
     }, [
         currentSubPageProfile,
         usuarioIdToDelete,

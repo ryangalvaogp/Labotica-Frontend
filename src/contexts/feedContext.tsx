@@ -39,21 +39,24 @@ export function FeedContextProvider({ children }: FeedContextProviderProps) {
   };
 
   useEffect(() => {
-    api.get('post').then(res => {
+    api
+      .get('post')
+      .then(res => {
       setPosts(res.data);
-    });
+    }).catch(res=>console.log(''))
+
   }, [refresh]);
 
   useEffect(() => {
     api.get('views/post/allposts/Alunos').then(res => {
       setListAllPostsAlunos(res.data);
-    });
+    }).catch(res=>console.log(''));
   }, [refresh]);
 
   useEffect(() => {
     api.get('views/post/allposts/Professores').then(res => {
       setListAllPostsProfessores(res.data);
-    });
+    }).catch(res=>console.log(''));
   }, [refresh]);
 
   return (

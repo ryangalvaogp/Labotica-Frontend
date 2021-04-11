@@ -70,7 +70,7 @@ export interface DepositsProps {
 }
 
 export interface TableUsuarioProps {
-    nameEntity: 'Aluno' | 'Professor'
+    nameEntity: UsuarioLogadoProps['funcao']
     Usuario: Usuario[]
 }
 

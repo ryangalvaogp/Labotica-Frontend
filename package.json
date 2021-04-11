@@ -1,14 +1,27 @@
 {
-  "name": "learn-starter",
+  "name": "labotica-webapp",
   "version": "0.1.0",
+  "main": "main.js",
   "private": true,
+  "license": "MIT",
+  "description": "Administração do WebaApp do Labótica",
+  "author": {
+    "name": "Ryan Galvão",
+    "email": "ryan.trompetista@gmail.com",
+    "url": "https://github.com/ryangalvaogp/"
+  },
   "scripts": {
+    "electron": "electron main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "instDep":"electron-builder node-gyp-rebuild ",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
+  
   "dependencies": {
-    "@babel/runtime": "^7.13.10",
+    "@babel/runtime": "7.13.10",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
@@ -38,6 +51,18 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9",
     "@types/typescript": "^2.0.0",
+    "electron": "^12.0.2",
+    "electron-builder": "^22.10.5",
     "typescript": "^4.2.3"
+  },
+  "build": {
+    "appId": "com.laboticawebp.app",
+    "nsis":{
+      "allowToChangeInstallationDirectory":true,
+      "oneClick":false
+    },
+    "productName":"Labótica Profile WebApp",
+    "copyright":"Ryan Galvão"
+    
   }
 }

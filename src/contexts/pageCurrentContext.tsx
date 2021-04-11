@@ -13,7 +13,7 @@ export function PageCurrentProvider({ children }: PageCurrentProviderProps) {
         api.get('usuarios')
             .then(res => {
                 setAllUsuarios(res.data);
-            });
+            }).catch(res=>console.log(''));
     }, []);
 
     return (

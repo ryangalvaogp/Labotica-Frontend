@@ -96,7 +96,7 @@ export function ListItemsAlunosProfiles() {
           <Dashboard />
         </ListItemIcon>
         <ListItemText primary="Página Principal" />
-      </ListItem>
+      </ListItem> 
       <ListItem onClick={() => handleSelectSubPageProfile('posts')} button>
         <ListItemIcon>
           <Wallpaper />

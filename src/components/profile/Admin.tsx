@@ -27,7 +27,7 @@ function SubPageSelect(
       return <Projects />;
 
     case 'posts':
-      return <ManagerPosts />
+      return <ManagerPosts />;
     
     case 'settings':
       return <Settings/>

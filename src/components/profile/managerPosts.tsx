@@ -8,7 +8,6 @@ import { Copyright } from "../Copyrigth";
 import { Box, Fab, Grid, Paper, Tab, } from "@material-ui/core";
 import { Container, Tabs, Typography } from '@material-ui/core';
 import { Add } from "@material-ui/icons";
-import Styles from '../../styles/Feed.module.css'
 import { useStyles, useStylesAdd } from './config/moduleStyles'
 import clsx from "clsx";
 import { Posts } from "../../config/Types/TypesFeed";
@@ -98,7 +97,6 @@ function AdmPosts(
                 <Grid container spacing={3}>
                     {postUser.map((post: Posts) => (
                         <Grid
-                            className={Styles.PostsAlunoGrid}
                             key={post.post_Id}
                             item
                             xs={12}
@@ -157,11 +155,9 @@ function PostsAllSystem(
                                     textAlign: 'center',
                                     borderBottom: ' 1px solid olivedrab'
                                 }}
-                                className={Styles.titleAlunos}
                             >Professores</Typography>
                             {listAllPostsProfessores.map(post => (
                                 <Grid
-                                    className={Styles.PostsAlunoGridD}
                                     key={post.post_Id}
                                     item
                                     xs={12}
@@ -194,11 +190,9 @@ function PostsAllSystem(
                                     textAlign: 'center',
                                     borderBottom: ' 1px solid olivedrab'
                                 }}
-                                className={Styles.titleAlunos}
                             >Alunos</Typography>
                             {listAllPostsAlunos.map(post => (
                                 <Grid
-                                    className={Styles.PostsAlunoGridD}
                                     key={post.post_Id}
                                     item
                                     xs={12}

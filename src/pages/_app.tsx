@@ -4,8 +4,6 @@ import { PageCurrentProvider } from '../contexts/pageCurrentContext'
 import { ProfileContextProvider } from '../contexts/profileContext'
 import { ProjetosContextProviderr } from '../contexts/projetosContext'
 
-import '../styles/global.css'
-
 export default function MyApp({ Component, pageProps }: any) {
 
   return (
