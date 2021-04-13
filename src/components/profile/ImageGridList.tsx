@@ -43,7 +43,7 @@ export default function ImageGridList(
                                     <img
                                         style={{ cursor: 'pointer' }}
                                         onClick={() => handleToggle()}
-                                        src={`https://backendlabotica.herokuapp.com/files/posts/${image.image}`}
+                                        src={`${image.url}`}
                                         alt={image.titulo} />
                                     <Backdrop
                                         className={classes.backdrop}
@@ -52,7 +52,7 @@ export default function ImageGridList(
                                     >
                                         <img
                                             style={{ cursor: 'pointer', width: 500 }}
-                                            src={`https://backendlabotica.herokuapp.com/files/posts/${image.image}`}
+                                            src={`${image.url}`}
                                             alt={image.titulo} />
                                     </Backdrop>
                                 </GridListTile>
@@ -78,7 +78,7 @@ export default function ImageGridList(
                                     <img
                                         onClick={() => handleToggle()}
                                         style={{ cursor: 'pointer' }}
-                                        src={`https://backendlabotica.herokuapp.com/files/projetos/${image.caminho}`}
+                                        src={`${image.url}`}
                                         alt={image.projeto.titulo}
                                     />
                                     <Backdrop
@@ -88,7 +88,7 @@ export default function ImageGridList(
                                     >
                                         <img
                                             style={{ cursor: 'pointer', width: 500 }}
-                                            src={`https://backendlabotica.herokuapp.com/files/projetos/${image.caminho}`}
+                                            src={`${image.url}`}
                                             alt={image.projeto.titulo} />
                                     </Backdrop>
                                 </GridListTile>

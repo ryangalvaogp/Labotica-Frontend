@@ -11,6 +11,7 @@ export interface ProjetosContextData {
         titulo: string
         caminho: string
         carrousel: boolean
+        url: string
     }[]
     projetos: ListProjetosProps[],
     projeto: Projeto[]
@@ -46,8 +47,9 @@ export type Projeto = {
 export type ImgProjetoProps = {
     id: string
     caminho: string
-    imgDefault: boolean,
+    imgDefault: boolean
     projeto: Projeto
+    url: string
 };
 
 export type DescriptionProjetoProps = {
@@ -60,6 +62,7 @@ export type ListProjetosProps = {
     caminho: string;
     imgDefault: boolean;
     projeto: Projeto;
+    url: string
 };
 
 export interface DenseTableProjetctsProps {
@@ -139,4 +142,5 @@ export type ImgProjetoPropsWithoutProjetoProps = {
     id: string
     caminho: string
     imgDefault: boolean
+    url: string
 };

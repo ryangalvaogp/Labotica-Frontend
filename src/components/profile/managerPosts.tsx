@@ -112,6 +112,7 @@ function AdmPosts(
                                 image={post.image}
                                 place={post.place}
                                 post_Id={post.post_Id}
+                                url={post.url}
                                 authorization={usuario_Id}
                             />
                         </Grid>
@@ -177,7 +178,9 @@ function PostsAllSystem(
                                             image={post.image}
                                             key={post.post_Id}
                                             post_Id={post.post_Id}
-                                            Usuario={post.usuario} />
+                                            Usuario={post.usuario}
+                                            url={post.url}
+                                            />
                                     </div>
                                 </Grid>
                             ))}
@@ -214,7 +217,9 @@ function PostsAllSystem(
                                             image={post.image}
                                             key={post.post_Id}
                                             post_Id={post.post_Id}
-                                            Usuario={post.usuario} />
+                                            Usuario={post.usuario} 
+                                            url={post.url}
+                                            />
                                     </div>
                                 </Grid>
                             ))}

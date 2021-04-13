@@ -17,7 +17,8 @@ export default function ListPostUser(
     image,
     post_Id,
     authorization,
-    Usuario
+    Usuario,
+    url
   }: Posts) {
   const {
     DeletePost,
@@ -76,7 +77,7 @@ export default function ListPostUser(
             onClick={handleToggle}
             alt={`Imagem do Post ${titulo}`}
             height="140"
-            image={`https://backendlabotica.herokuapp.com/files/posts/${image}`}
+            image={url}
             title={titulo}
           />
           <CardContent>
@@ -139,7 +140,7 @@ export default function ListPostUser(
         <img
           style={{ cursor: 'pointer' }}
           onClick={handleCloseToggle}
-          src={`https://backendlabotica.herokuapp.com/files/posts/${image}`}
+          src={url}
           alt={image} />
       </Backdrop>
     </>

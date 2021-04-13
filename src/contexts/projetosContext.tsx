@@ -13,7 +13,7 @@ export function ProjetosContextProviderr({ children }: ProjetosContextProvider) 
   const [projetos, setProjetos] = useState<ListProjetosProps[]>([])//Listar Projetos e Imagem padrão
   const [imagesProjetos, setImagesProjetos] = useState<ImgProjetoProps[]>([])//Todas imagens de todos os projetos
   const [projeto, setProjeto] = useState<Projeto[]>([])//Listar Projeto Específico
-  const [projetctSelectedToViewImages, setProjetctSelectedToViewImages] = useState<Projeto['projeto_id']>('')//Selecionar um Projeto Específico para ver suas imagens
+  const [projetctSelectedToViewImages, setProjetctSelectedToViewImages] = useState<Projeto['projeto_id']>('s')//Selecionar um Projeto Específico para ver suas imagens
   const [imgProjeto, setImgProjeto] = useState<ImgProjetoPropsWithoutProjetoProps[]>([])//Imagens de um projeto Específico
   const [imagesProjetosToCarrousel, setImagesProjetosToCarrousel] = useState([])
 
@@ -106,7 +106,6 @@ export function ProjetosContextProviderr({ children }: ProjetosContextProvider) 
     api.post(`projetos/${projetctSelectedToViewImages}`)
       .then(res => {
         setProjeto(res.data);
-        console.log(res.data)
       })
   }, [projetctSelectedToViewImages]);
 

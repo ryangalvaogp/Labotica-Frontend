@@ -2,9 +2,9 @@ import { DescriptionProjetoProps } from '../config/Types/TypesProjetos';
 import { FaCircle } from "react-icons/fa";
 
 export default function DescriptionProjeto(
-    { 
-        description, 
-        participantes 
+    {
+        description,
+        participantes
     }: DescriptionProjetoProps) {
     return (
         <>
@@ -32,8 +32,8 @@ export default function DescriptionProjeto(
                             </i>
                             <h1>Participantes</h1>
                             <p className="lead">
-                                I hear the buzz of the little world among the stalks, 
-                                and grow familiar with the countless indescribable forms 
+                                I hear the buzz of the little world among the stalks,
+                                and grow familiar with the countless indescribable forms
                                 of the insects and flies</p>
                         </div>
                     </div>
