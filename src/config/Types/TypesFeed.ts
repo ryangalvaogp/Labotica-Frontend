@@ -25,6 +25,7 @@ export type LisPostsEntity = {
     },
     image: string
     data: string
+    url: string
 };
 
 export interface FeedContextProviderProps {
@@ -44,6 +45,7 @@ export type Posts = {
     image?: string
     data?: string
     authorization?: string
+    url: string
 };
 
 export interface NewPostDialogProps {
